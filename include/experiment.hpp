@@ -1,7 +1,7 @@
 // Copyright 2020 Your Name <your_email>
 
-#ifndef TEMPLATE_EXPERIMENT_HPP
-#define TEMPLATE_EXPERIMENT_HPP
+#ifndef lab-02-cache_EXPERIMENT_HPP
+#define lab-02-cache_EXPERIMENT_HPP
 #include <vector>
 #include <iostream>
 #include <random>
@@ -36,4 +36,4 @@ class experiment {
   unsigned int number_exp;
 };
 
-#endif  // TEMPLATE_EXPERIMENT_HPP
+#endif  // lab-02-cache_EXPERIMENT_HPP
