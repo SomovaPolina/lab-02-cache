@@ -1,5 +1,3 @@
-// Copyright 2020 Your Name <your_email>
-
 #include "experiment.hpp"
 
 unsigned int iterations = 1000;
@@ -36,7 +34,6 @@ void experiment::warm_up_cash(const unsigned int &size_in_byte) {
     t = arr[i];
   }
 }
-
 void experiment::main_experiment(std::ostream &out)
 {
   number_exp = 0;
@@ -46,6 +43,7 @@ void experiment::main_experiment(std::ostream &out)
     number_exp++;
     random(byte_sizes.at(i),out);
   }
+
   out << "investigation: " << "\n"
       << "  travel variant: \"direct\"" << std::endl
       << "  experiments:" << std::endl;
@@ -145,5 +143,3 @@ std::ostream& operator<<(std::ostream& out, experiment& exp) {
   exp.main_experiment(out);
   return out;
 }
-
-

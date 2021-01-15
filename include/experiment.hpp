@@ -1,7 +1,7 @@
 // Copyright 2020 Your Name <your_email>
 
-#ifndef lab-02-cache_EXPERIMENT_HPP
-#define lab-02-cache_EXPERIMENT_HPP
+#ifndef LAB_02_CACHE_EXPERIMENT_HPP
+#define LAB_02_CACHE_EXPERIMENT_HPP
 #include <vector>
 #include <iostream>
 #include <random>
@@ -17,7 +17,7 @@ struct cash_sizes{
 class experiment {
  public:
   void main_experiment(std::ostream &out);
-  //const std::ostringstream &get_out() const;
+
   experiment();
   void set_byte_sizes(const struct cash_sizes& sizes);
   friend std::ostream& operator<<(std::ostream& ostream_out, experiment& exp);
@@ -25,7 +25,7 @@ class experiment {
   std::vector<unsigned int> byte_sizes;
   std::vector<unsigned int> arr;
   std::mt19937 engine;
-  //std::ostream out;
+
   void warm_up_cash(const unsigned int &size_in_byte);
   void create_arr(const unsigned int &size_in_byte);
   void direct(const unsigned int& byte_size,std::ostream &out);
@@ -35,5 +35,4 @@ class experiment {
                        std::ostream &out);
   unsigned int number_exp;
 };
-
-#endif  // lab-02-cache_EXPERIMENT_HPP
+#endif  // LAB_02_CACHE_EXPERIMENT_HPP
